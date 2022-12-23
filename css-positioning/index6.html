@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Positioning - Image Text Position</title>
+    <style>
+      * {
+        font-size: 18px;
+      }
+      .container {
+        position: relative;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        opacity: 0.3;
+      }
+      .topleft {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+      }
+      .topright {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+      }
+      .bottomleft {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+      }
+      .bottomright {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+      }
+      .centered {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Image text</h2>
+    <p>Add some text to an image in the top left corner:</p>
+
+    <div class="container">
+      <img
+        src="img_5terre_wide.jpg"
+        alt="CinqueTerre"
+        width="1000"
+        height="300"
+      />
+      <div class="topleft">Top left</div>
+      <div class="topright">Top right</div>
+      <div class="bottomleft">Bottom left</div>
+      <div class="bottomright">Bottom right</div>
+      <div class="centered">Centered</div>
+    </div>
+  </body>
+</html>

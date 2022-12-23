@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS - How to</title>
+        
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--external css-->
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+        <!--internal css-->
+        <style>
+            body{ background-color: linen; }
+        </style>
+    </head>
+
+    <!--inline css-->
+    <body style="background-color: lavender">
+        <h1>Multiple Styles Will Cascade into One</h1>
+        <p>Here, the background color of the page is set with inline CSS, and also with an internal CSS, and also
+        with an external CSS.</p>
+        <p>Try experimenting by removing styles to see how the cascading stylesheet work (try removing the inline CSS first, then the internal, then the external.)</p>
+    </body>
+</html>

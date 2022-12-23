@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Multiple Backgrounds - Using the background-clip property</title>
+    <style>
+      #example1 {
+        border: 10px dotted black;
+        background: yellow;
+        padding: 35px;
+      }
+      #example2 {
+        border: 10px dotted black;
+        background: yellow;
+        background-clip: padding-box;
+        padding: 35px;
+      }
+      #example3 {
+        border: 10px dotted black;
+        background: yellow;
+        background-clip: content-box;
+        padding: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Background-Clip property</h1>
+    <p>No background-clip (border-box is default):</p>
+    <div id="example1">
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat.
+      </p>
+      <p>
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <p>background-clip: padding-box</p>
+    <div id="example2">
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat.
+      </p>
+      <p>
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <p>background-clip: content-box</p>
+    <div id="example3">
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat.
+      </p>
+      <p>
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  </body>
+</html>

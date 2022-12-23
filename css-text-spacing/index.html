@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Text Spacing</title>
+    <style>
+      p.indent {
+        text-indent: 50px;
+      }
+      h1.ls1 {
+        letter-spacing: 5px;
+      }
+      h2.ls2 {
+        letter-spacing: -2px;
+      }
+      p.small {
+        line-height: 0.8;
+      }
+      p.big {
+        line-height: 1.8;
+      }
+      p.one {
+        word-spacing: 10px;
+      }
+      p.two {
+        word-spacing: -2px;
+      }
+      p.white-spacing {
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Text Spacing</h1>
+    <h2>Using text-indent</h2>
+    <p class="indent">
+      In my younger and more vulnerable years, my father gave me some advice
+      that I've been turning over my mind ever since 'Whenever you feel like
+      criticizing anyone,' he told me, ' just remember that all the people in
+      this world haven't had the advantages that you've had.'
+    </p>
+
+    <h1>Using letter-spacing</h1>
+    <h1 class="ls1">This is heading 1</h1>
+    <h2 class="ls2">This is heading 2</h2>
+
+    <h1>Using line-height</h1>
+    <p>This is a paragraph with a standard line-height.</p>
+    <p>The default line height in most browsers is about 110% to 120%.</p>
+    <p class="small">
+      This is a paragraph with a smaller line-height. <br />
+      This is a paragraph with a smaller line-height.
+    </p>
+    <p class="big">
+      This is a paragraph with a bigger line-height. <br />
+      This is a paragraph with a bigger line-height.
+    </p>
+
+    <h1>Using word-spacing</h1>
+    <p>This is a paragraph with normal word-spacing.</p>
+    <p class="one">This is a paragraph with larger word spacing.</p>
+    <p class="two">This is a paragraph with smaller word spacing.</p>
+
+    <h1>Using white-space</h1>
+    <p class="white-spacing">
+      This is some text that will not wrap. This is some text that will not
+      wrap. This is some text that will not wrap. This is some text that will
+      not wrap. This is some text that will not wrap. This is some text that
+      will not wrap. This is some text that will not wrap. This is some text
+      that will not wrap. This is some text that will not wrap.
+    </p>
+  </body>
+</html>

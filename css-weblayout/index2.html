@@ -1,0 +1,143 @@
+<!-- CSS Website Layout - Unequaled columns -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Website Layout - Unequal Columns with footer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      /* style the header */
+      .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      /* style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+      }
+
+      /* left and right column */
+      .column.side {
+        width: 25%;
+      }
+
+      /* middle column */
+      .column.middle {
+        width: 50%;
+      }
+
+      /* clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* responsive layout */
+      @media screen and (max-width: 600px) {
+        .column.side,
+        .column.middle {
+          width: 100%;
+        }
+      }
+
+      /* style the footer */
+      .footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--header-->
+    <div class="header">
+      <h1>Header</h1>
+      <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+
+    <!--navigation-->
+    <div class="topnav">
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </div>
+
+    <!--row-->
+    <div class="row">
+      <!--column side-->
+      <div class="column side">
+        <h2>Side</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+      </div>
+      <!--end of column side-->
+
+      <!--column main-->
+      <div class="column middle">
+        <h2>Main Content</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+          amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+          elementum magna tristique. Quisque vehicula, risus eget aliquam
+          placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+          Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+          amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+          elementum magna tristique. Quisque vehicula, risus eget aliquam
+          placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+          Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+      </div>
+      <!--end of column main-->
+
+      <!--column side-->
+      <div class="column side">
+        <h2>Side</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+      </div>
+      <!--end of column side-->
+    </div>
+    <!--row-->
+
+    <!--footer-->
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+    <!--end of footer-->
+  </body>
+</html>

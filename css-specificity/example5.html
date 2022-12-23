@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Equal Specificity - The latest rule counts</title>
+    <style>
+      /* Equal specificity: the latest rule wins - If the same rule is written twice into the external style sheet, then the latest rule wins */
+      h1 {
+        background-color: yellow;
+      }
+      h1 {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is heading 1</h1>
+  </body>
+</html>

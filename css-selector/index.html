@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Selectors</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*select css universal*/
+            *{ padding: 0; margin: 0 auto; line-height: 2em; }
+
+            /*select body element */
+            body{ background-color: #191A19; }
+
+            /*grouping elements*/
+            h1, p{ font-family:'Consolas',sans-serif; font-size: 20px; color:#4E9F3D; }
+
+            /*select only p element with class="link"*/
+            a.link{ font-family:'Consolas',sans-serif; color: #D8E9A8; }
+
+            /*the css id selector*/
+            /*#headings{ float: left; font-family:'Consolas', sans-serif; font-size: 17px; color:#4E9F3D; }*/
+
+            /*the css class selector*/
+            /*.paragraph{ float: left; font-family:'Consolas',sans-serif; font-size: 17px; color:#4E9F3D; }*/
+
+        </style>
+    </head>
+    <body>
+        <!--block element -> div with id attribute-->
+        <h1>Hello World!</h1>
+
+        <!--block element -> div with class attribute-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <p>Read more about <a class="link" href="#">lorem ipsum</a></p>
+
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 1: !important</title>
+    <style>
+      :root {
+        --dark-clr: #2d353b;
+        --dark-clr-hover: #0e1012;
+        --light-clr: rgb(182, 182, 182);
+        --light-clr-hover: rgb(125, 125, 125);
+        --light-txt: #fff;
+        --dark-txt: #000;
+      }
+      * {
+        font-family: sans-serif;
+      }
+      p {
+        line-height: 2;
+      }
+      .btn {
+        background-color: var(--dark-clr) !important;
+        color: var(--light-txt) !important;
+        padding: 10px 12px !important;
+        border-radius: 5px !important;
+        text-decoration: none !important;
+      }
+      .btn:hover {
+        background-color: var(--dark-clr-hover) !important;
+        cursor: pointer !important;
+      }
+      #myDiv a {
+        color: var(--dark-txt);
+        background-color: var(--light-clr);
+      }
+      #myDiv a:hover {
+        color: var(--light-txt);
+        background-color: var(--light-clr-hover);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Standard button: <a href="#" class="btn">Button</a></p>
+
+    <div id="myDiv">
+      <p>This button goes here: <a href="#" class="btn">Button</a></p>
+      <p>This button goes here: <a href="#" class="btn">Button</a></p>
+    </div>
+  </body>
+</html>

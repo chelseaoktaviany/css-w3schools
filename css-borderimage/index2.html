@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      CSS Border Images - Creating border with border-image 2 (stretch)
+    </title>
+    <style>
+      #borderimg {
+        border: 10px solid transparent;
+        border-image: url("border.png") 30 stretch;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The border-image property</h1>
+
+    <p>
+      Here, the middle sections of the image are strectched to create the
+      border:
+    </p>
+    <p id="borderimg">border-image: url('border.png') 30 stretch;</p>
+
+    <p>Here is the original image:</p>
+    <img src="border.png" />
+
+    <p>
+      <strong>Note:</strong> Internet Explorer 10, and earlier versions, do not
+      support the border-image property.
+    </p>
+  </body>
+</html>

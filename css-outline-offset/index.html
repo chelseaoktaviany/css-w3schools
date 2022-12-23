@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Outline Offset</title>
+    <style>
+      p.a {
+        margin: 30px;
+        border: 1px solid black;
+        outline: 1px solid red;
+        outline-offset: 15px;
+      }
+      p.b {
+        margin: 50px 20px;
+        background: yellow;
+        border: 1px solid black;
+        outline: 1px solid red;
+        outline-offset: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="a">This paragraph has an outline 15px outside the border edge</p>
+    <p class="b">
+      This paragraph has an outline of 15px outside the border edge
+    </p>
+  </body>
+</html>
